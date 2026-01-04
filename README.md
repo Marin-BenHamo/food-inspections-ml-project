@@ -52,10 +52,6 @@ The following unsupervised techniques were applied:
 - DBSCAN – detection of dense regions and anomalous inspections  
 - PCA – dimensionality reduction and visual exploration  
 
----
-
-## 📁 Repository Structure
----
 
 ## 🚀 Quick Start
 
