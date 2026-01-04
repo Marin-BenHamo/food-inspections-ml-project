@@ -1,45 +1,33 @@
-# Food Inspections – חיזוי כישלון בבדיקות מזון  
+<div dir="rtl">
 
-**קורס:** נושאים מתקדמים בלמידת מכונה  
-**מרצה:** Prof. Chen Haggag  
-**סטודנטית:** Marin Ben-Hamo  
+<h2>🛠️ שיטות ואלגוריתמים</h2>
 
----
+<h3>למידה מפוקחת (Classification)</h3>
 
-## 🎯 מטרת הפרויקט
-מטרת הפרויקט היא לפתח מודלים של למידת מכונה לצורך חיזוי כישלון (Fail) בבדיקות בטיחות מזון, על סמך מאפייני העסק, סוג הבדיקה, גורמי סיכון ומידע מרחבי וזמני.  
-בנוסף, בוצע ניתוח לא־מפוקח (Unsupervised Learning) לצורך זיהוי דפוסים, אשכולות וחריגות בנתונים.
+<ul>
+  <li><span dir="ltr">Logistic Regression</span></li>
+  <li><span dir="ltr">Decision Tree</span></li>
+  <li><span dir="ltr">Random Forest</span></li>
+  <li><span dir="ltr">Gradient Boosting</span></li>
+  <li><span dir="ltr">Neural Network (MLP)</span></li>
+</ul>
 
----
+<p>
+המודלים הוערכו באמצעות מדדי
+<span dir="ltr">Accuracy</span>,
+<span dir="ltr">ROC-AUC</span>,
+<span dir="ltr">Precision</span>,
+<span dir="ltr">Recall</span>
+ואופטימיזציית סף החלטה
+(<span dir="ltr">Threshold</span>).
+</p>
 
-## 📊 מאגר הנתונים
-**מקור הנתונים:**  
-Chicago Food Inspections Dataset (דרך data.gov)
+<h3>למידה לא־מפוקחת (Unsupervised Learning)</h3>
 
-**אופן הטעינה:**  
-הנתונים נטענים דינמית בזמן הרצת הקוד באמצעות Socrata API.  
-על מנת להבטיח שחזור עקבי של הניסויים, הוגדרה הגבלה קבועה למספר הרשומות (300,554) וכן הוחל סדר דטרמיניסטי על הנתונים באמצעות מיון לפי תאריך הבדיקה ומזהה הרשומה (inspection_date, inspection_id).
+<ul>
+  <li><span dir="ltr">K-Means Clustering</span> – זיהוי אשכולות ודפוסים</li>
+  <li><span dir="ltr">DBSCAN</span> – זיהוי אזורים חריגים ונקודות רעש</li>
+  <li>ניתוח מבוסס <span dir="ltr">PCA</span> לצמצום מימדים והמחשה ויזואלית</li>
+</ul>
 
----
-
-## 🛠️ שיטות ואלגוריתמים
-
-### למידה מפוקחת (Classification)
-- Logistic Regression  
-- Decision Tree  
-- Random Forest  
-- Gradient Boosting  
-- Neural Network (MLP)  
-
-המודלים הוערכו באמצעות Accuracy, ROC-AUC, Precision, Recall ואופטימיזציית סף החלטה (Threshold).
-
----
-
-### למידה לא מפוקחת (Unsupervised Learning)
-- K-Means Clustering  
-- DBSCAN  
-- ניתוח מבוסס PCA לצמצום מימדים והמחשה ויזואלית  
-
----
-
-## 📁 מבנה הריפוזיטורי
+</div>
