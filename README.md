@@ -96,11 +96,5 @@ Dataset source:
 - Matplotlib, Seaborn
 - Jupyter Notebook
 
----
-
-## 🤖 AI Tools Disclosure
-
-This project utilized AI assistance (ChatGPT) for code clarification and documentation refinement, in accordance with the course guidelines.
-
 
 
