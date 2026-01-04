@@ -55,3 +55,17 @@ The following unsupervised techniques were applied:
 ---
 
 ## 📁 Repository Structure
+---
+
+## 🚀 Quick Start
+
+Clone the repository:
+git clone <repository-url>
+cd food-inspections-ml-project
+
+Install dependencies:
+pip install -r requirements.txt
+
+Run the main notebook:
+jupyter notebook ML_project.ipynb
+
