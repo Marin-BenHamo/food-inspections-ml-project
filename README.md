@@ -1,33 +1,57 @@
-<div dir="rtl">
+# Chicago Food Inspections – Predicting Inspection Failure
 
-<h2>🛠️ שיטות ואלגוריתמים</h2>
+**Student:** Marin Ben-Hamo  
+**Course:** Advanced Topics in Machine Learning  
+**Instructor:** Prof. Chen Haggag  
 
-<h3>למידה מפוקחת (Classification)</h3>
+---
 
-<ul>
-  <li><span dir="ltr">Logistic Regression</span></li>
-  <li><span dir="ltr">Decision Tree</span></li>
-  <li><span dir="ltr">Random Forest</span></li>
-  <li><span dir="ltr">Gradient Boosting</span></li>
-  <li><span dir="ltr">Neural Network (MLP)</span></li>
-</ul>
+## 🎯 Project Goal
+The objective of this project is to predict whether a food establishment inspection will result in a **Fail** outcome using supervised machine learning classification techniques.  
+In addition, unsupervised learning methods are applied to identify patterns, clusters, and anomalous inspection behaviors within the data.
 
-<p>
-המודלים הוערכו באמצעות מדדי
-<span dir="ltr">Accuracy</span>,
-<span dir="ltr">ROC-AUC</span>,
-<span dir="ltr">Precision</span>,
-<span dir="ltr">Recall</span>
-ואופטימיזציית סף החלטה
-(<span dir="ltr">Threshold</span>).
-</p>
+---
 
-<h3>למידה לא־מפוקחת (Unsupervised Learning)</h3>
+## 📊 Dataset
+**Source:** Chicago Food Inspections Dataset (data.gov)
 
-<ul>
-  <li><span dir="ltr">K-Means Clustering</span> – זיהוי אשכולות ודפוסים</li>
-  <li><span dir="ltr">DBSCAN</span> – זיהוי אזורים חריגים ונקודות רעש</li>
-  <li>ניתוח מבוסס <span dir="ltr">PCA</span> לצמצום מימדים והמחשה ויזואלית</li>
-</ul>
+- The original CSV dataset is very large and therefore not stored in the repository.
+- Data is loaded dynamically at runtime using the **Socrata Open Data API**.
+- To ensure reproducibility, the dataset was limited to **300,554 records**.
+- A deterministic ordering was applied using `inspection_date` and `inspection_id`, ensuring a stable and consistent dataset across runs.
 
-</div>
+**Main Features:**
+- Inspection type  
+- Risk level  
+- Facility type  
+- Inspection date  
+- Geographic location  
+- Inspection result (Pass / Fail)
+
+---
+
+## 🛠️ Methods and Algorithms
+
+### Supervised Learning (Classification)
+The following models were implemented and evaluated:
+
+- Logistic Regression  
+- Decision Tree  
+- Random Forest  
+- Gradient Boosting  
+- Neural Network (MLP)  
+
+Models were evaluated using Accuracy, ROC-AUC, Precision, Recall, and threshold optimization, with particular emphasis on detecting failed inspections.
+
+---
+
+### Unsupervised Learning
+The following unsupervised techniques were applied:
+
+- K-Means Clustering – identification of structural clusters and patterns  
+- DBSCAN – detection of dense regions and anomalous inspections  
+- PCA – dimensionality reduction and visual exploration  
+
+---
+
+## 📁 Repository Structure
