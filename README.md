@@ -69,3 +69,42 @@ pip install -r requirements.txt
 Run the main notebook:
 jupyter notebook ML_project.ipynb
 
+---
+
+## 📊 Data Availability
+
+Due to the large size of the original CSV dataset, the raw data is not stored in this repository.
+
+Instead, the data is loaded dynamically at runtime directly from the official Chicago Food Inspections dataset hosted on data.gov, using the Socrata Open Data API.
+
+A fixed row limit (300,554 records) and deterministic ordering based on inspection_date and inspection_id were applied to ensure reproducibility.
+
+Dataset source:
+[https://data.cityofchicago.org](https://catalog.data.gov/dataset/food-inspections)
+
+---
+
+## 📈 Key Findings
+
+- Risk level and inspection type are among the most influential predictors of inspection failure.
+- Threshold selection significantly affects the balance between Precision and Recall.
+- Unsupervised learning methods revealed clear structural patterns in inspection behavior.
+
+---
+
+## 🔧 Technologies Used
+
+- Python 3
+- Pandas, NumPy
+- Scikit-learn
+- Matplotlib, Seaborn
+- Jupyter Notebook
+
+---
+
+## 🤖 AI Tools Disclosure
+
+This project utilized AI assistance (ChatGPT) for code clarification and documentation refinement, in accordance with the course guidelines.
+
+
+
